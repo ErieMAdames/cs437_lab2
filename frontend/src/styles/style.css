@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 56px;
+}
+h1,
+h2 {
+    margin: 8px 0;
+}
+#upArrow,
+#leftArrow,
+#rightArrow,
+#downArrow {
+    display: inline-flex;
+    font-size: 50px;
+    color: lightgray;
+}
+#upArrow.active,
+#leftArrow.active,
+#rightArrow.active,
+#downArrow.active {
+    color: green;
+    transform: scale(1.5);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.carControls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.single {
+    display: flex;
+    align-self: center;
+}
+#leftArrow {
+    margin-right: 75px;
+}
+.sendMessage,
+.scan {
+    height: 50px;
+    width: 120px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color ease-in-out 250ms;
+}
+.sendMessage:hover,
+.scan:hover {
+    transition: background-color ease-in-out 250ms;
+    background-color: rgb(201, 244, 201);
+}
+.rpiMessages {
+    height: 50px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+#message {
+    height: 46px;
+    padding: 0 0 0 8px;
+}
+.pi-info ul {
+    padding-left: 20px;
+    width: 300px;
+}
+.speed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#forwardSpeed {
+    width: 300px;
+}
+.currentForwardSpeed {
+    font-size: 32px;
+}
+#directionArrow {
+    display: flex;
+    margin-left: 8px;
+    font-size: 24px;
+}
+li {
+    display: flex;
+    margin-bottom: 10px;
+}
+#map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+span {
+    margin-left: 8px;
+}

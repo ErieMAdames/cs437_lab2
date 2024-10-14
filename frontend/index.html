@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            .container {
+                display: flex;
+            }
+        </style>
+        <link rel="stylesheet" href="src/styles/style.css" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="src/index.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>CS498: IoT -- Lab 2</h1>
+            <h2>Erie M. Adames</h2>
+        </div>
+        <div id="map">
+            <canvas id="gridCanvas" width="500" height="500"></canvas>
+            <button class="scan" onclick="scan()">Scan</button>
+        </div>
+        <div class="container">
+            <div class="carControls">
+                <h3>Car Controls</h3>
+                <span id="upArrow" class="single">&#11014;</span>
+                <div class="multi">
+                    <span id="leftArrow">&#11013;</span>
+                    <span id="rightArrow">&#11157;</span>
+                </div>
+                <span id="downArrow" class="single">&#11015;</span>
+            </div>
+            <div class="speed">
+                <h3>Forward speed</h3>
+                <input type="range" id="forwardSpeed" name="forwardSpeed" min="0" max="100" value="30" oninput="currentForwardSpeedSlider(this.value)" />
+                <p class="currentForwardSpeed">30</p>
+            </div>
+
+            <div class="pi-info">
+                <h3>Pi Info</h3>
+                <ul>
+                    <li>Direction: <span id="direction"> </span> <span id="directionArrow">&#8593;</span></li>
+                    <li>
+                        Speed:
+                        <span id="speed">0.0</span>
+                    </li>
+                    <li>Distance Traveled: <span id="distance">0.0</span></li>
+                    <li>Pi CPU Temp: <span id="temperature">0.0</span></li>
+                    <li>Battery Voltage: <span id="voltage">0.0</span></li>
+                </ul>
+                <!-- Bluetooth return value: <span id="bluetooth"> </span> -->
+            </div>
+        </div>
+    </body>
+</html>
