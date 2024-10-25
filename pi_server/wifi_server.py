@@ -10,7 +10,7 @@ import os
 os.system('ulimit -n 4096') 
 
 HOST = "192.168.86.46" # IP address of your Raspberry PI
-PORT = 65431          # Port to listen on (non-privileged ports are > 1023)
+PORT = 65432          # Port to listen on (non-privileged ports are > 1023)
 speed = 30
 distance_traveled = 0
 moving = False  # Track if the car is currently moving
