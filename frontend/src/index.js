@@ -1,8 +1,7 @@
 document.onkeydown = updateKey;
 document.onkeyup = resetKey;
-const server_port = 65432;
-const server_port_scan = 65433;
-const server_addr = "192.168.86.32"; // the IP address of your Raspberry PI
+const server_port = 65431;
+const server_addr = "192.168.86.46"; // the IP address of your Raspberry PI
 
 const nodeConsole = require("console");
 const myConsole = new nodeConsole.Console(process.stdout, process.stderr);
